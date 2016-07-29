@@ -13,6 +13,9 @@ csvRow = csvRows.sort()
 print csvRows
 
 
-
+output= open('output.csv','wb')
+writer = csv.writer(output)
+writer.writerow("")
+writer.writerow(csvRows)
 
 
