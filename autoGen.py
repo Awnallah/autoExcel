@@ -71,7 +71,8 @@ def transfer(file='data.xlsx',sheet='Sheet1', output='testing.xlsx'):
 
 
 		# c is for column letter and r is for row number
-		if row[current_proj].value != None:
+		useful = row[current_doc].value.startswith('BAWP') | row[current_doc].value.startswith('BRSF')
+		if row[current_proj].value != None and useful:
 			c = project_col_dic[row[current_proj].value]
 			r = row[current_proj].row
 			location = c + str(r)
