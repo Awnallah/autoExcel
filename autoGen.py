@@ -106,4 +106,4 @@ def transfer(file='data.xlsx',sheet='Sheet1', output='testing.xlsx'):
 
 
 
-transfer('data.xlsx','Sheet1','testing.xlsx')
+transfer('CTdata.xlsx','Sheet2','CTout.xlsx')
